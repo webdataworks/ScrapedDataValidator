@@ -1,0 +1,82 @@
+{ "run_index":1,
+"runs":[{
+  "run_id": "msje",
+  "search_csv": "bodylab_search.csv",
+  "detail_csv": "bodylab_detail.csv",
+  "search_txt": "bodylab24_search.txt",
+  "detail_txt": "bodylab24_detail.txt",
+  "tests":{ 
+  "search_test":{
+    "missing_attribute_test": {
+      "status": 1,
+      "on_file": "search csv",
+      "columns": ["Product_Code","Product_Name", "Search_Term", "rank","shallow_url","DetailURL"]
+    },
+    "non_empty_results_for_each_search_term_test":{
+      "status": 1,
+      "on_file": "search csv"
+    },
+    "search_terms_not_in_csv_test":{
+      "status": 1,
+      "on_file": "search csv"
+    },
+    "rank_ordering_test":{
+      "status": 1,
+      "on_file": "search csv"
+    }
+  },
+  "detail_test":{
+    "missing_attribute_test": {
+      "status": 1,
+      "on_file": "search csv",
+      "columns": ["URL","Product_Name", "Sku", "Availability","Price","Rating","Review","Image_URL","Old_price"]
+    },
+     "products_not_listed_in_scrape_test":{
+      "status": 1,
+      "on_file": "detail_csv"    
+     }
+  }
+}
+}
+  ,{
+  "run_id": "jdvn",
+  "search_csv": "bodylab_search.csv",
+  "detail_csv": "bodylab_detail.csv",
+  "search_txt": "bodylab24_search.txt",
+  "detail_txt": "bodylab24_detail.txt",
+  "tests":{ 
+  "search_test":{
+    "missing_attribute_test": {
+      "status": 1,
+      "on_file": "search csv",
+      "columns": ["Product_Code","Product_Name", "Search_Term", "rank","shallow_url","DetailURL"]
+    },
+    "non_empty_results_for_each_search_term_test":{
+      "status": 1,
+      "on_file": "search csv"
+    },
+    "search_terms_not_in_csv_test":{
+      "status": 1,
+      "on_file": "search csv"
+    },
+    "rank_ordering_test":{
+      "status": 1,
+      "on_file": "search csv"
+    }
+  },
+  "detail_test":{
+    "missing_attribute_test": {
+      "status": 1,
+      "on_file": "search csv",
+      "columns": ["URL","Product_Name", "Sku", "Availability","Price","Rating","Review","Image_URL","Old_price"]
+    },
+     "products_not_listed_in_scrape_test":{
+      "status": 1,
+      "on_file": "detail_csv"  
+     }
+    
+  }
+  }
+}
+]
+}
