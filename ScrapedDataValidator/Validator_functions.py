@@ -1,5 +1,7 @@
 from pyspark.sql.functions import col,isnan,when,count
+from pyspark.sql import SparkSession
 
+spark = SparkSession.builder.appName("learning-dataframe").getOrCreate()
 
 
 def input_csv_file(file_name:str):
